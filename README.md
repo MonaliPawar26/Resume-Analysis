@@ -1,213 +1,386 @@
 # AI Resume Analyzer & Intelligent Job Match Platform
 
-## Project Overview
+## 🚀 Live Demo
 
-A fully production-ready SaaS platform that uses AI to analyze resumes, match jobs, and help candidates land their dream jobs. Built with a premium Silicon Valley-level UI/UX.
+🔗 **Try the platform:** https://gvxxpt599a.youware.app
 
-## Key Features
+---
 
-### For Candidates
-- **AI Resume Analysis** — Upload PDF/DOCX, get instant score (0–100), ATS analysis, skill extraction, and improvement suggestions
-- **Job Matching** — Semantic matching with compatibility scores against curated job listings
-- **AI Rewrite Tool** — GPT-powered resume rewrite suggestions
-- **Analytics Dashboard** — Skill gap charts, radar charts, weekly activity
-- **Resume History** — Track multiple resume versions and their scores
-- **Job Browser** — Browse and save matched jobs with one-click apply
+# AI Resume Analyzer & Intelligent Job Match Platform
 
-### For Recruiters
-- **Post Jobs** — Define required skills and experience levels
-- **AI Ranking** — Automatically rank candidates by resume compatibility
-- **Candidate Shortlisting** — Filter, compare, and export candidates
-- **Analytics** — Track posting performance and candidate pipeline
+## 📌 Project Overview
 
-### For Admins
-- **User Management** — View, manage, and moderate all users
-- **AI Usage Monitoring** — Track API calls, scan counts, and system health
-- **Revenue Analytics** — MRR, plan distribution, subscription management
-- **Platform Analytics** — DAU, conversion rates, performance metrics
+A fully production-ready **SaaS platform** that uses **AI to analyze resumes, match jobs, and help candidates land their dream jobs**.
 
-## Tech Stack
+The platform simulates a **real-world recruitment ecosystem** with three user roles:
 
-| Layer | Technology |
-|-------|-----------|
-| Framework | React 18 + TypeScript |
-| Build | Vite 7 (with manual chunk splitting) |
-| Styling | Tailwind CSS 3 + custom CSS |
-| Animations | Framer Motion 11 + GSAP |
-| Charts | Recharts |
-| State | Zustand (with localStorage persistence) |
-| Routing | React Router DOM v6 |
-| Icons | Lucide React |
-| File Upload | React Dropzone |
-| 3D/Physics | Three.js + Cannon.js (optional) |
+* Candidates
+* Recruiters
+* Admins
 
-## Design System
+It provides **AI-driven resume scoring, ATS compatibility analysis, job matching, and analytics dashboards** with a **premium Silicon Valley–level UI/UX design**.
 
-### Colors
-- **Primary**: Indigo (`#6366f1` → `#4f46e5`)
-- **Accent Purple**: `#a855f7`
-- **Accent Cyan**: `#22d3ee`
-- **Accent Pink**: `#ec4899`
-- **Dark BG**: `#0a0a0f`
-- **Dark Card**: `#111118`
-- **Dark Border**: `#1e1e2e`
+---
 
-### CSS Classes
-- `.glass` — Glassmorphism card (low blur)
-- `.glass-strong` — High-blur glassmorphism
-- `.glass-card` — Subtle card background
-- `.gradient-text` — Indigo→Purple gradient text
-- `.btn-primary` — Primary CTA button with glow
-- `.btn-secondary` — Secondary glass button
-- `.badge-{success|warning|danger|info|primary}` — Color badges
-- `.skeleton` — Loading skeleton with shimmer effect
-- `.dropzone` / `.dropzone-active` — File upload zones
-- `.sidebar-item` / `.sidebar-item-active` — Navigation items
+# ✨ Key Features
 
-### Tailwind Extensions
-- `shadow-glow` — Blue glow shadow
-- `shadow-glow-lg` — Large blue glow shadow
-- `animate-float` — Slow floating animation
-- `animate-pulse-glow` — Pulsing glow animation
-- `animate-gradient-shift` — Gradient background shift
+## 👨‍💻 For Candidates
 
-## Project Architecture
+### AI Resume Analysis
+
+* Upload **PDF or DOCX resumes**
+* Get **instant AI score (0–100)**
+* ATS compatibility analysis
+* Skill extraction
+* Resume improvement suggestions
+
+### Job Matching
+
+* Semantic job matching engine
+* Compatibility score with job listings
+* Smart skill overlap detection
+
+### AI Resume Rewrite Tool
+
+* AI-powered resume rewriting
+* Professional bullet suggestions
+* Optimized ATS wording
+
+### Analytics Dashboard
+
+* Skill gap radar charts
+* Weekly activity analytics
+* Resume score tracking
+
+### Resume History
+
+* Track multiple resume versions
+* Compare resume scores over time
+
+### Job Browser
+
+* Browse job listings
+* Filter jobs
+* Save jobs
+* One-click apply
+
+---
+
+# 🏢 For Recruiters
+
+### Job Posting
+
+* Post new job openings
+* Define required skills
+* Add experience requirements
+
+### AI Candidate Ranking
+
+* Automatically rank candidates
+* Resume compatibility scoring
+
+### Candidate Shortlisting
+
+* Filter applicants
+* Compare candidates
+* Export candidate lists
+
+### Recruitment Analytics
+
+* Job posting performance
+* Candidate pipeline tracking
+
+---
+
+# 🛠 For Admins
+
+### User Management
+
+* Manage platform users
+* Moderate accounts
+
+### AI Usage Monitoring
+
+* Track AI scans
+* Monitor API calls
+* System health monitoring
+
+### Revenue Analytics
+
+* Monthly recurring revenue (MRR)
+* Subscription plan tracking
+
+### Platform Analytics
+
+* Daily active users
+* Conversion rates
+* Platform performance metrics
+
+---
+
+# 🧑‍💻 Tech Stack
+
+| Layer            | Technology                      |
+| ---------------- | ------------------------------- |
+| Framework        | React 18 + TypeScript           |
+| Build Tool       | Vite 7                          |
+| Styling          | Tailwind CSS 3                  |
+| Animations       | Framer Motion 11 + GSAP         |
+| Charts           | Recharts                        |
+| State Management | Zustand                         |
+| Routing          | React Router DOM v6             |
+| Icons            | Lucide React                    |
+| File Upload      | React Dropzone                  |
+| 3D / Physics     | Three.js + Cannon.js (optional) |
+
+---
+
+# 🎨 Design System
+
+## Colors
+
+Primary: **Indigo**
+`#6366f1 → #4f46e5`
+
+Accent Colors
+
+* Purple — `#a855f7`
+* Cyan — `#22d3ee`
+* Pink — `#ec4899`
+
+Dark Theme
+
+* Background — `#0a0a0f`
+* Card — `#111118`
+* Border — `#1e1e2e`
+
+---
+
+# 🎯 UI Components
+
+* Glassmorphism cards
+* Animated cursor with spring physics
+* Particle background
+* Tilt 3D cards
+* Score ring progress indicators
+* Toast notification system
+* Skeleton loaders
+* Radar skill charts
+* Analytics charts
+* Animated page transitions
+
+---
+
+# 📂 Project Architecture
 
 ```
 src/
-├── App.tsx                    # Root with routes, ToastProvider, AnimatedCursor
-├── index.css                  # Global styles, glassmorphism, custom CSS
-├── main.tsx                   # Entry point
+├── App.tsx
+├── main.tsx
+├── index.css
+│
 ├── types/
-│   └── index.ts               # All TypeScript types
+│   └── index.ts
+│
 ├── store/
-│   ├── authStore.ts           # Zustand auth + theme store (persisted)
-│   ├── resumeStore.ts         # Resume analyses store (persisted)
-│   └── jobStore.ts            # Job listings + matching engine
+│   ├── authStore.ts
+│   ├── resumeStore.ts
+│   └── jobStore.ts
+│
 ├── components/
 │   ├── ui/
-│   │   ├── AnimatedCursor.tsx # Custom cursor with spring physics
-│   │   ├── SharedComponents.tsx # ScoreRing, ProgressBar, TiltCard, Badge, Skeleton, StatCard
-│   │   └── Toast.tsx          # Toast notification system
+│   │   ├── AnimatedCursor.tsx
+│   │   ├── SharedComponents.tsx
+│   │   └── Toast.tsx
+│   │
 │   ├── animations/
-│   │   └── Backgrounds.tsx    # ParticleBackground, FloatingOrbs, GridBackground
+│   │   └── Backgrounds.tsx
+│   │
 │   └── layout/
-│       ├── Navbar.tsx         # Landing page navbar with user menu
-│       ├── Footer.tsx         # Landing page footer
-│       └── Sidebar.tsx        # Dashboard sidebar (role-aware)
+│       ├── Navbar.tsx
+│       ├── Footer.tsx
+│       └── Sidebar.tsx
+│
 ├── pages/
-│   ├── LandingPage.tsx        # Full landing page (hero, features, pricing, testimonials)
+│   ├── LandingPage.tsx
+│   │
 │   ├── auth/
-│   │   ├── LoginPage.tsx      # Login with demo account hints
-│   │   └── RegisterPage.tsx   # Register with role selection
+│   │   ├── LoginPage.tsx
+│   │   └── RegisterPage.tsx
+│   │
 │   ├── candidate/
-│   │   ├── CandidateDashboard.tsx # 4-tab dashboard (overview, analysis, jobs, rewrite)
-│   │   └── JobsPage.tsx       # Job listings browser with filters
+│   │   ├── CandidateDashboard.tsx
+│   │   └── JobsPage.tsx
+│   │
 │   ├── recruiter/
-│   │   └── RecruiterDashboard.tsx # Recruiter panel with job posting, candidate table
+│   │   └── RecruiterDashboard.tsx
+│   │
 │   ├── admin/
-│   │   └── AdminPanel.tsx     # Admin with user management, analytics, revenue
+│   │   └── AdminPanel.tsx
+│   │
 │   └── shared/
-│       ├── ProfilePage.tsx    # Profile/Settings (profile, security, notifications, billing, privacy)
-│       └── NotFoundPage.tsx   # 404 page
+│       ├── ProfilePage.tsx
+│       └── NotFoundPage.tsx
 ```
 
-## Demo Accounts
+---
 
-| Role | Email | Password |
-|------|-------|---------|
-| Candidate | `candidate@demo.com` | any |
-| Recruiter | `recruiter@demo.com` | any |
-| Admin | `admin@demo.com` | any |
+# 🔑 Demo Accounts
 
-You can also register any new email and choose a role during signup.
+| Role      | Email                                           | Password |
+| --------- | ----------------------------------------------- | -------- |
+| Candidate | [candidate@demo.com](mailto:candidate@demo.com) | any      |
+| Recruiter | [recruiter@demo.com](mailto:recruiter@demo.com) | any      |
+| Admin     | [admin@demo.com](mailto:admin@demo.com)         | any      |
 
-## Routes
+You can also register a **new account** and choose your role.
 
-| Path | Access | Description |
-|------|--------|-------------|
-| `/` | Public | Landing page |
-| `/login` | Public | Login page |
-| `/register` | Public | Register page |
-| `/dashboard` | Candidate | Main candidate dashboard |
-| `/jobs` | Authenticated | Job browser |
-| `/profile` | Authenticated | Profile & settings |
-| `/recruiter` | Recruiter | Recruiter dashboard |
-| `/admin` | Admin | Admin panel |
-| `*` | Public | 404 Not Found |
+---
 
-## AI Engine (Mock)
+# 🌐 Routes
 
-The resume analysis and job matching engines are fully simulated but production-realistic:
-- **Resume Score**: 72–92 range with randomized variation per upload
-- **ATS Issues**: Detects tables, missing LinkedIn, lacks metrics
-- **Skill Extraction**: 10 predefined skills across technical/soft/tool categories
-- **Job Matching**: Semantic-style matching based on skill overlap %
-- **AI Rewrite**: Template-based professional resume rewrite suggestions
+| Route        | Access        | Description         |
+| ------------ | ------------- | ------------------- |
+| `/`          | Public        | Landing Page        |
+| `/login`     | Public        | Login Page          |
+| `/register`  | Public        | Register Page       |
+| `/dashboard` | Candidate     | Candidate Dashboard |
+| `/jobs`      | Authenticated | Job Browser         |
+| `/profile`   | Authenticated | Profile Page        |
+| `/recruiter` | Recruiter     | Recruiter Dashboard |
+| `/admin`     | Admin         | Admin Panel         |
+| `*`          | Public        | 404 Page            |
 
-To integrate real AI (OpenAI API), replace `generateMockAnalysis()` in `resumeStore.ts` with actual API calls.
+---
 
-## Premium UI Features
+# 🤖 AI Engine (Mock Implementation)
 
-1. **Custom Animated Cursor** — Spring physics, scaling on hover, trail effect
-2. **Particle Background** — 30 floating particles with opacity fade
-3. **Glassmorphism** — Multi-level glass effects (`glass`, `glass-strong`, `glass-card`)
-4. **TiltCard** — 3D perspective tilt on mouse move
-5. **Score Rings** — SVG animated circular progress with color thresholds
-6. **Toast Notifications** — Spring-animated toasts (success/error/info/warning)
-7. **Framer Motion** — Page transitions, stagger animations, scroll-triggered reveals
-8. **Radar Charts** — Skill visualization with recharts
-9. **Area Charts** — Weekly activity analytics
-10. **Skeleton Loaders** — Shimmer effect on loading states
+The AI engine simulates real-world resume analysis.
 
-## Build & Development
+Features include:
 
-```bash
-# Install dependencies
+* Resume score **72–92**
+* ATS issue detection
+* Skill extraction
+* Job compatibility scoring
+* AI resume rewriting suggestions
+
+To integrate **real AI APIs**, replace the mock function:
+
+```
+generateMockAnalysis()
+```
+
+with OpenAI or other AI APIs.
+
+---
+
+# 💎 Premium UI Features
+
+1. Custom Animated Cursor
+2. Particle Background
+3. Glassmorphism UI
+4. 3D Tilt Cards
+5. SVG Score Rings
+6. Toast Notifications
+7. Framer Motion Animations
+8. Radar Charts
+9. Area Analytics Charts
+10. Skeleton Loaders
+
+---
+
+# ⚙️ Development Setup
+
+## Install Dependencies
+
+```
 npm install
+```
 
-# Development server
+## Run Development Server
+
+```
 npm run dev
+```
 
-# Production build
+## Production Build
+
+```
 npm run build
 ```
 
-## Build Output (Optimized)
+---
 
-| Chunk | Size (gzip) | Contents |
-|-------|-------------|---------|
-| react-vendor | ~53 KB | React, ReactDOM, Router |
-| charts | ~118 KB | Recharts |
-| framer-motion | ~39 KB | Framer Motion |
-| icons | ~6 KB | Lucide React |
-| state | ~1 KB | Zustand |
-| index | ~57 KB | App code |
+# 📦 Build Optimization
 
-## Subscription Plans
+| Chunk         | Size    | Description      |
+| ------------- | ------- | ---------------- |
+| react-vendor  | ~53 KB  | React ecosystem  |
+| charts        | ~118 KB | Recharts         |
+| framer-motion | ~39 KB  | Animations       |
+| icons         | ~6 KB   | Lucide icons     |
+| state         | ~1 KB   | Zustand          |
+| index         | ~57 KB  | Application code |
 
-| Plan | Price | Scans | Features |
-|------|-------|-------|---------|
-| Free | $0 | 3/month | Basic analysis, job matching |
-| Pro | $19/mo | Unlimited | Advanced AI, resume rewriting, ATS breakdown |
-| Recruiter | $49/mo | Unlimited | Bulk ranking, AI filtering, export |
+---
 
-## Future Enhancements
+# 💰 Subscription Plans
 
-- [ ] Real OpenAI/Anthropic API integration for actual resume parsing
-- [ ] AWS S3 for secure resume file storage
-- [ ] Real authentication with JWT tokens
-- [ ] Email notifications with SendGrid
-- [ ] LinkedIn import integration
-- [ ] Multi-language resume support
-- [ ] Chrome extension for job page analysis
-- [ ] Team/company accounts for recruiters
-- [ ] ATS integration with Greenhouse, Lever, Workday
+| Plan      | Price     | Features               |
+| --------- | --------- | ---------------------- |
+| Free      | $0        | Basic analysis         |
+| Pro       | $19/month | Advanced AI tools      |
+| Recruiter | $49/month | Bulk candidate ranking |
 
-## Notes for Development
+---
 
-- All state is persisted to `localStorage` via Zustand `persist` middleware
-- Theme switching (dark/light) is in `authStore.ts` — currently only dark is fully styled
-- `AnimatedCursor` is hidden on mobile (`pointer-events: none` via CSS media query)
-- The `mock AI engine` returns realistic but randomized data on each file upload
-- All files accepted are `.pdf` and `.docx` (validation in CandidateDashboard)
+# 🚀 Future Enhancements
+
+* Real AI resume parsing
+* AWS S3 file storage
+* JWT authentication
+* Email notifications
+* LinkedIn resume import
+* Multi-language resume support
+* Chrome extension for job analysis
+* Recruiter team accounts
+* ATS integrations (Greenhouse, Lever, Workday)
+
+---
+
+# 🧠 Development Notes
+
+* All state stored using **Zustand with localStorage persistence**
+* Dark theme currently fully styled
+* Animated cursor disabled on mobile
+* Mock AI returns realistic randomized data
+* Supported file formats: **PDF, DOCX**
+
+---
+
+# ⭐ Contributing
+
+Contributions are welcome. Feel free to open issues or submit pull requests.
+
+---
+
+# 📜 License
+
+MIT License
+
+---
+
+# 👩‍💻 Author
+
+**Monali Pawar**
+Computer Science Engineering Student
+Passionate about **AI, Full Stack Development, and SaaS Platforms**
+
+
+
+
+
+
+
+
